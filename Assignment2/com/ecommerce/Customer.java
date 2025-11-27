@@ -38,8 +38,8 @@ public class Customer {
         shoppingCart.add(product);
     }
 
-    public void removeProductFromCart(Product product) {
-        shoppingCart.remove(product);
+    public boolean removeProductFromCart(Product product) {
+        return shoppingCart.remove(product);
     }
 
     // Method to calculate total cost

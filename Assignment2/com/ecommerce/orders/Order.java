@@ -11,12 +11,14 @@ public class Order {
     private Customer customer;
     private List<Product> products;
     private double orderTotal;
+    private String status;
 
     // Constructor
     public Order(Customer customer, List<Product> products) {
         this.orderID = Counter++;
         this.customer = customer;
         this.products = products;
+        this.status = "Processing";
         this.orderTotal = calculateOrderTotal();
         System.out.println("Order successfully created.");
     }
@@ -36,6 +38,14 @@ public class Order {
 
     public double getOrderTotal() {
         return orderTotal;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+    
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     // Method to calculate order total

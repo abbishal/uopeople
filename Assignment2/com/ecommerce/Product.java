@@ -1,4 +1,3 @@
-// File: com/ecommerce/Product.java
 package com.ecommerce;
 
 public class Product {
